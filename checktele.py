@@ -219,7 +219,7 @@ async def _(event):
         ch = str(msg[2])
         choice = str(msg[1])
         trys = 0
-        await event.edit(f"حسناً سأفحص نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
+        await event.edit(f"حسناً ساصيد نوع `{choice}` من اليوزرات على `{ch}` , بعدد `{msg[0]}` من المحاولات !")
 
         @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
@@ -251,7 +251,7 @@ async def _(event):
                     await event.client.send_message(event.chat_id, f'''
  
 - Done ↣  (@{username}) !
-- By ↣ @G_5_G !
+- By ↣ @B_W_9 !
   
   
   ''')
@@ -266,7 +266,7 @@ async def _(event):
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await fifthon.send_message(event.chat.id, "سأستمر بلفحص !")
+                        await fifthon.send_message(event.chat.id, "سأستمر بلصيد !")
             else:
                 pass
             trys += 1
@@ -274,7 +274,7 @@ async def _(event):
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "تم الانتهاء من الفحص")
+        await event.client.send_message(event.chat_id, "تم الانتهاء من الصيد")
         
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
